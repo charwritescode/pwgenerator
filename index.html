@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <!--Style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <script src="generator.js" defer></script>
+</head>
+
+<body>
+    <!--Header and Password Output-->
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="white">
+            <h2>Your Password:</h2>
+            <div class="pwbox">
+                <input type="text" class="output" value="">
+                <button id="copy" onclick="copyPW()">Copy</button>
+            </div>
+        </div>
+        <!--Option Controls-->
+        <div class="light">
+            <div class="item">
+                <label for="passLength">Password Length: </label> <input type="number" value="4" id="passLength" min="4"
+                    max="20">
+                <p class="smalltext">Range: 4-20 characters</p><br>
+            </div>
+
+            <div class="item">
+                <label for="upperCase">Use Uppercase: </label> <input class="a" type="checkbox" id="upperCase">
+            </div>
+
+            <div class="item">
+                <label for="lowerCase">Use Lowercase: </label> <input class="a" type="checkbox" id="lowerCase">
+            </div>
+
+            <div class="item">
+                <label for="numbers">Use Numbers: </label> <input class="a" type="checkbox" id="numbers">
+            </div>
+
+            <div class="item">
+                <label for="symbols">Use Symbols: </label> <input class="a" type="checkbox" id="symbols">
+            </div>
+            <!--Submit to generate password-->
+            <button id="generate">Create Password</button>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

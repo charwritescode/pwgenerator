@@ -1,0 +1,164 @@
+/* Basic variables */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+} 
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    margin: 2rem 0 2rem 0;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* Box properties for each section */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background: #000;
+    border: 2px solid #000;
+    justify-content: center;
+}
+
+.white {
+    background-color: #FFF;
+    padding: 1.5rem 1rem;
+}
+
+.light {
+    background: rgb(243, 242, 242);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Password box */
+
+.pwbox {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.output {
+    background: #FFF;
+    width: 60%;
+    height: 50px;
+    overflow: auto;
+    margin: 0 .8rem 0 0;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.pwbox button {
+    padding: .8rem 1.2rem;
+    border: none;
+    outline: none;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background-color: #000;
+    color: #FFF;
+}
+
+.pwbox button:hover {
+    padding: .7rem 1.2rem;
+    border: 2px solid #000;
+    outline: none;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background-color: #FFF;
+    color: #000;
+}
+
+/* Option selectors and generate password button */
+
+input, label {
+    margin: 1rem .2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.smalltext {
+    font-size: .9rem;
+}
+
+#passLength{
+    text-align: center;
+}
+
+#generate {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: #000;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 1.5rem 1.2rem;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: .1rem;
+}
+
+#generate:hover {
+    padding: .9rem;
+    border: 2px solid #000;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: #FFF;
+    color: #000;
+    margin: 1.5rem 1.2rem;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: .1rem;
+}
+
+/* Media Queries */
+
+@media (max-width:1000px) {
+    .container {
+        width: 100%;
+        border: none;
+        align-self: top;
+    }
+    body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
